@@ -29,12 +29,12 @@ public:
         return result;
     }
 
-    static uint64_t min()
+    constexpr static uint64_t min()
     {
         return 0;
     }
 
-    static uint64_t max()
+    constexpr static uint64_t max()
     {
         return ~(uint64_t)0;
     }

@@ -18,6 +18,14 @@ function. */
 using namespace omp;
 using namespace std;
 
+double testWins(EquityCalculator::Results &mResults, int i) {
+    return (mResults.wins[ i ]) / (mResults.hands + 1e-9);
+}
+
+double testTies(EquityCalculator::Results &mResults, int i) {
+    return (mResults.ties[ i ]) / (mResults.hands + 1e-9);
+}
+
 string progname; //global scope to be accessed outside of main
 
 /*Prints usage information for the program, to be used with -h.  Prints to
