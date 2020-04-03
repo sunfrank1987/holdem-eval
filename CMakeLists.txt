@@ -9,7 +9,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 # TODO: Remove the depricated register keywords
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-register")
 
-option(BUILD_GTEST "build for test" OFF)
+option(BUILD_TEST "build for test" OFF)
 option(BUILD_SSE4 "build for SSE4" ON)
 
 
